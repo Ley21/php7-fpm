@@ -11,7 +11,6 @@ RUN apt-get update \
  
 RUN sed 's/;daemonize = yes/daemonize = no/' -i /etc/php/7.0/fpm/php-fpm.conf
 
-VOLUME /etc/php/7.0/fpm
 COPY pool.d/ /etc/php/7.0/fpm/pool.d/
 CMD ["/usr/sbin/php-fpm7.0"]
 
