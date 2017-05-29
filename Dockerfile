@@ -8,6 +8,6 @@ RUN apt-get update \
 
 VOLUME /etc/php/7.0/fpm
 COPY pool.d/ /etc/php/7.0/fpm/pool.d/
-CMD ["/usr/sbin/php7.0-fpm"]
+CMD ["/usr/sbin/php-fpm7.0"]
 
 EXPOSE 9000
